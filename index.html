@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dian's Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #FFF2F2;
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #A9B5DF;
+            color: #7886C7;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 10px;
+            font-family: 'Darumadrop One', sans-serif;
+        }
+        .cover {
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+            margin: 10px auto;
+            border-radius: 10px;
+            border: 3px solid #7886C7;
+        }
+        .section-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #A9B5DF;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .section-bar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+            border: 3px solid #FFF2F2;
+            transition: transform 0.3s;
+        }
+        .section-bar p {
+            color: #2D336B;
+            font-size: 16px;
+            text-align: justify;
+            padding: 10px;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .section-bar img:hover, .skills img:hover, .next:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .content p {
+            color: #7886C7;
+            font-size: 16px;
+            max-width: 300px;
+            font-family: 'Outfit', sans-serif;
+        }
+        .content img {
+            width: 110px;
+            height: 110px;
+            margin: 0 20px;
+            transition: transform 0.3s, content 0.3s;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+            content: url('Stiker\ Wawan\ 2.png');
+        }
+        .skills {
+            background-color: #A9B5DF;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .skills h2 {
+            color: #2D336B;
+            font-family: 'Outfit', sans-serif;
+        }
+        .skills img {
+            width: 90px;
+            height: 90px;
+            border: 3px solid #7886C7;
+            background-color: #FFF2F2;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .skills img:hover {
+            transform: scale(1.1);
+        }
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .dots {
+            flex-grow: 1;
+            text-align: left;
+            color: #7886C7;
+        }
+        .next {
+            background-color: #7886C7;
+            padding: 15px;
+            width: auto;
+            min-width: 100px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .next a {
+            text-decoration: none;
+            color: #FFF2F2;
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+        }
+        .copyright {
+            background-color: #A9B5DF;
+            color: #2D336B;
+            font-family: 'Outfit', sans-serif;
+            padding: 2px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        @media (max-width: 600px) {
+            .section-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    <script>
+        function changeImageOnHover(imgElement, newSrc, originalSrc) {
+            imgElement.addEventListener('mouseenter', function() {
+                this.src = newSrc;
+            });
+            imgElement.addEventListener('mouseleave', function() {
+                this.src = originalSrc;
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            let iconImg = document.querySelector(".content img");
+            if (iconImg) {
+                changeImageOnHover(iconImg, 'Stiker\ Wawan\ 2.png', 'Stiker\ Wawan\ 1.png');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="header">Dian's Web</div>
+    <img src="─────🌀𝙒𝙖𝙣𝙙𝙚𝙧𝙚𝙧 𝙉𝙖𝙢𝙚𝙘𝙖𝙧𝙙🌀─────.jpeg" alt="Cover Image" class="cover">
+    <div class="section-bar">
+        <img src="Wulan 1.jpeg" alt="Profile Picture">
+        <p>Halo-halo min-na!! 😼<br>
+            Namaku <strong>Dian Wulandari</strong>, yang artinya <strong>Pelita yang bersinar seperti bulan penuh</strong>. Ada yang pernah bilang kalau namaku cantik—dan jujur, aku langsung terharu! (╥﹏╥)<br>
+            Meski panggilanku <strong>Dian</strong>, sebenarnya namaku <strong>Wulan</strong>.<br>
+            Aku <strong>20 tahun</strong>, seorang <strong>ENTJ sejati</strong>, dan punya cinta tak berujung untuk <strong>bulan Januari</strong>. Kenapa? Karena... karena aku lahir di bulan Januari, hehe 😂<br>  
+            Yoroshiku ne~! 💖</p>
+    </div>
+    <div class="content">
+        <p><strong>Likes!!</strong><br>
+            Ungu dan biru, kucing, mie ayam, main game, menulis, menggambar, membaca, menonton anime dan film, romance, angst
+        </p>
+        <img src="Stiker Wawan 1.png" alt="Icon">
+        <p><strong>Dislikes!!</strong><br>
+            Ketidakadilan, orang yang berisik dan kasar, extreme gore
+        </p>
+    </div>
+    <div class="skills">
+        <h2>My Skills</h2>
+        <img src="Ibis Paint.png" alt="Skill 1">
+        <img src="Alight Motion.png" alt="Skill 2">
+    </div>
+    <div class="navigation">
+        <div class="dots">● ● ● ● ●</div>
+        <div class="next"><a href="hobbies.html"><strong>Next Page</strong></a></div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Dian Wulandari. All rights reserved.</p>
+    </div>    
+</body>
+</html>
